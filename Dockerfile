@@ -6,5 +6,5 @@ COPY . /usr/share/nginx/html
 # Ensure correct permissions (optional)
 RUN chown -R nginx:nginx /usr/share/nginx/html
 
-EXPOSE 8000
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
